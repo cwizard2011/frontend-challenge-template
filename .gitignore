@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Next JS
+.next
+.DS_Store
+._*
+coverage/
+logs/
+.next/
+
+# Yarn
+yarn-error.log
+
+.env
+
+src/out

@@ -1,0 +1,130 @@
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background-color: $color-black;
+  position: relative;
+}
+
+.header.product {
+  background-color: $color-white;
+}
+
+.brand a{
+  color: $color-pink;
+  font-size: $fontSize-meduim;
+  font-family: $font-montserrat;
+  letter-spacing: 4px;
+}
+
+.header-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-items a {
+  color: $color-white;
+  font-family: $font-montserrat;
+  font-size: $fontSize-small-1;
+  font-weight: bold;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+
+  &.active {
+    color: $color-pink;
+    font-weight: bold;
+  }
+}
+
+.header-items + .header-items {
+  margin-left: 2rem;
+}
+
+.search-wrapper {
+  height: 36px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.header__shopping-cart {
+  position: relative;
+
+  .shopping-cart__number-of-items {
+    position: absolute;
+    top: 48%;
+    left: 1px;
+    right: 0;
+    z-index:10;
+    text-align:center;
+    font-size: 12px;
+    letter-spacing:-0.04em;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    pointer-events: none;
+    color: $color-black;
+    line-height:0em;
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      left: 2px;
+    }
+  }
+
+  .shopping-cart__icon {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    color: $color-black;
+    font-family: $font-montserrat;
+    font-size: 16px;
+    background-color: unset;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.search-results {
+  min-height: 200px;
+  width: 92%;
+  margin-top: 1rem;
+  position: absolute;
+  background-color: $color-white;
+  z-index: 9999999;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.search-item {
+  padding: 1rem;
+  border-bottom: 1px solid $color-grey;
+  
+  
+}
+
+.search-item a {
+  color: $color-black;
+  font-size: $fontSize-small;
+  font-family: $font-montserrat;
+}
+
+.search-item + .search-item {
+  margin-top: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 9px;
+  cursor: pointer;
+
+  img {
+    height: 14px;
+  }
+}

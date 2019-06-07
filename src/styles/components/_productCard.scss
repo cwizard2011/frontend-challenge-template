@@ -1,0 +1,83 @@
+.product-card {
+  background-color: $color-white;
+  border: 1px solid $color-grey;
+  height: 336px;
+  margin-top: 24px;
+  margin-right: 10px;
+  padding: 0;
+
+  &:hover {
+    border: 2px solid $color-grey;
+}
+}
+
+.space-evenly {
+  justify-content: center;
+}
+
+.thumbnail {
+  padding-top: 32px;
+  height: 163px;
+  background-size: cover;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-name {
+  color: $color-black;
+  font-family: $font-montserrat;
+  font-weight: bold;
+  font-size: $fontSize-small;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.product-price {
+  color: $color-pink;
+  font-family: $font-montserrat;
+  font-weight: bold;
+  font-size: $fontSize-small;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.image-thumbnails {
+  display: flex;
+}
+
+
+.image__box {
+  height: 96px;
+  width: 96px;
+  margin: 2rem 1rem;
+  cursor: pointer;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 2.4rem;
+  }
+
+  .instagram__box {
+    display: block;
+    white-space: nowrap;
+    height: 96px;
+    // border: 0.5rem solid $color-pink;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+
+    @include media-breakpoint-down(lg) {
+      border-width: 0.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 96px;
+    }
+
+    &:hover {
+      border-color: $color-grey;
+    }
+  }
+}
