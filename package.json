@@ -10,7 +10,7 @@
     "dotenv": "^7.0.0",
     "dotenv-webpack": "^1.7.0",
     "es6-promise": "^4.2.6",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "helmet": "^3.16.0",
     "immutability-helper": "^3.0.0",
     "isomorphic-fetch": "^2.2.1",
